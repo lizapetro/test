@@ -8,8 +8,9 @@ import {changeActiveWallet} from '../actions/actionsWallet';
 
 class Wallet extends Component{
   handleClick(event){
-    this.props.changeActiveWallet(event.currentTarget.name);
-    this.props.getShedule(this.props.wallet.term,this.props.wallet.name);
+    console.log('туть',event.currentTarget.name);
+    this.props.changeActiveWallet(event.currentTarget.name)
+    this.props.getShedule('day',event.currentTarget.name);
   }
   getShedule(event){
     this.props.getShedule(event.target.value,this.props.wallet.name);
@@ -67,11 +68,11 @@ class Wallet extends Component{
             }
 
           <div className='btn'>
-            <button onClick={this.getShedule.bind(this)} value='day' >Day</button>
+            <button onClick={this.getShedule.bind(this)} value='day' autofocus='true'>Day</button>
             <button onClick={this.getShedule.bind(this)} value='week'>Week</button>
             <button onClick={this.getShedule.bind(this)} value='month'>Month</button>
           </div>
-            {shedule.isLoading?<Shedule data={shedule.data}/>:<p>Loading</p>}
+            <Shedule data={shedule.data}/>
       </div>
     )
   }

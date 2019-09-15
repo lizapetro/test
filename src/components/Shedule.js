@@ -3,7 +3,6 @@ import {Chart} from 'react-google-charts';
 
 class Shedule extends Component{
   render(){
-    console.log(this.props);
     return(
       <Chart
         width={'100%'}

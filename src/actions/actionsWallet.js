@@ -15,9 +15,8 @@ export function getShedule(term,wallet){
       type:'LOADING_SHEDULE',
       payload:true
     });
-      console.log(term);
      let dataForReq=dataForRequest(term,wallet);
-     console.log(dataForReq);
+     console.log('!!!!',wallet)
      fetch(dataForReq.link)
      .then(res=>res.json())
      .then(res=>{
