@@ -1,0 +1,155 @@
+html,body{
+  margin:0;
+  padding:0;
+}
+
+#root{
+  width:70%;
+  margin:0 auto;
+  background: rgb(58,60,72);
+  color:white;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+header{
+  display: block;
+  height:50px;
+}
+header div.searching img{
+  display:block;
+  width:40px;
+  height:40px;
+  padding:25px;
+}
+ul.list{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  padding-bottom:50px;
+}
+
+.link,
+.back{
+  text-decoration: none;
+  color:white;
+}
+header{
+  text-align: left;
+}
+.back{
+  font-size: 30px;
+  font-weight: bold;
+  padding:30px;
+}
+ul.list{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+ul.list li{
+  background: rgba(255,255,255,0.1);
+  margin:30px;
+  border-radius: 5px;
+  padding:20px 0;
+}
+ul.list li div.name,
+ul.list li div.money,
+.presentation div.name,
+.presentation div.money{
+  display:inline-block;
+  width:40%;
+}
+
+ul.list li div.name,
+.presentation div.name{
+  text-align: left;
+  position: relative;
+}
+ul.list li div.icon,
+.presentation div.icon{
+  display:inline-block;
+  font-size: 30px;
+  text-align: left;
+  vertical-align:top;
+  margin-right:8px;
+}
+ul.list li div p,
+.presentation div p{
+  margin:0;
+
+}
+
+ul.list li div.money,
+.presentation div.money{
+  text-align:right;
+}
+main div.info p,
+ul.list li div p{
+  opacity:0.3;
+}
+ul.list li div p.font{
+  font-size: 20px;
+  opacity: 1;
+}
+div.btn{
+  text-align: left;
+  margin-left:30px;
+}
+button{
+  border:0;
+  border-radius: 5px;
+  color:white;
+  margin:10px;
+  padding:5px 25px;
+  background: rgb(58,60,72);
+}
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+button:focus{
+  border:0;
+  background: rgba(255,255,255,0.1);
+}
+.list-wallets .list{
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.list-wallets .list li{
+  display: inline-block;
+
+  white-space:pre-wrap;
+}
+.presentation{
+  margin:10px 0;
+
+}
+
+#reactgooglegraph-1{
+  background: rgb(58,60,72);
+}
+
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+  #root{
+    width:100%;
+    min-height:812px;
+  }
+  .list-wallets .list li{
+    margin:0;
+    padding: 10px;
+    margin:0 15px;
+    width:60%;
+  }
+  .list-wallets .list li .name p{
+    font-size:12px;
+    text-align: left
+  }
+  .list-wallets .list li .money p{
+    font-size:12px;
+  }
+
+}
